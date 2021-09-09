@@ -6,13 +6,28 @@
     </head>
     <body>
         <h1>Eigenskapar ved nettlesaren m.m.</h1>
+<<<<<<< HEAD
         <p id="utskriftNettlesarinfo">
             <!-- Øv deg gjerne på å skrive data frå scriptet ut her. -->
         </p> 
+=======
+        <p id="utskrift">
+            <!-- Denne delen blir fyllt ut i linje 19, vha. document.getElementById ... -->
+        </p>
+        <p id="utskriftNettlesarInfo">
+            <!-- Øv deg sjølv. Fyll ut meir informasjon om nettlesaren her. Ta gjerne utg.pkt. i linjer 23-28. -->
+        </p>
+>>>>>>> ec18ce3febb0516bffd75f2af23a646872085100
         <p>Sjå console.log for meir detaljar, inkl. geolokasjon.</p>
         
+        <!-- KODE: -->
         <script>
+<<<<<<< HEAD
             document.getElementById("utskriftNettlesarinfo").innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
+=======
+            document.getElementById("utskrift").innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
+            // Alternativ måte å gjere linja over på (neste 2 linjene): 
+>>>>>>> ec18ce3febb0516bffd75f2af23a646872085100
             //var utskrift = document.getElementById("utskrift");
             //utskrift.innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
             console.log("navigator.appName: " + navigator.appName);
@@ -22,8 +37,12 @@
             console.log("navigator.userAgent: " + navigator.userAgent);
             console.log("navigator.cookieEnabled: " + navigator.cookieEnabled);
 
+<<<<<<< HEAD
             document.getElementById("utskrift").innerHTML = navigator.userAgent;
 
+=======
+            document.getElementById("utskriftNettlesarInfo").innerHTML = "navigator.userName: " + navigator.userAgent;
+>>>>>>> ec18ce3febb0516bffd75f2af23a646872085100
 
             // Geolokasjon
             navigator.geolocation.getCurrentPosition(showPosition);
