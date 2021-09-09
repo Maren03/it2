@@ -6,13 +6,13 @@
     </head>
     <body>
         <h1>Eigenskapar ved nettlesaren m.m.</h1>
-        <p id="utskrift">
+        <p id="utskriftNettlesarinfo">
             <!-- Øv deg gjerne på å skrive data frå scriptet ut her. -->
         </p> 
         <p>Sjå console.log for meir detaljar, inkl. geolokasjon.</p>
         
         <script>
-            document.getElementById("utskrift").innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
+            document.getElementById("utskriftNettlesarinfo").innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
             //var utskrift = document.getElementById("utskrift");
             //utskrift.innerHTML = "Me kan hente ut diverse eigenskapar til fana og nettlesaren som er open. Fana du har open er " + window.innerWidth + " piksler brei, og " + window.innerHeight + " piksler høg. Nettsida som er open er " + window.location + ".";
             console.log("navigator.appName: " + navigator.appName);
@@ -21,6 +21,9 @@
             console.log("navigator.platform: " + navigator.platform);
             console.log("navigator.userAgent: " + navigator.userAgent);
             console.log("navigator.cookieEnabled: " + navigator.cookieEnabled);
+
+            document.getElementById("utskrift").innerHTML = navigator.userAgent;
+
 
             // Geolokasjon
             navigator.geolocation.getCurrentPosition(showPosition);
